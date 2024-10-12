@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a UNAChat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #36393f;
+      color: #dcddde;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      background-color: #2f3136;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      width: 80%;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #7289da;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      color: #b9bbbe;
+      margin-bottom: 20px;
+    }
+    .login-btn {
+      display: inline-block;
+      background-color: #7289da;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .login-btn:hover {
+      background-color: #5b6eae;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #72767d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Bienvenido a UNAChat!</h1>
+    <p>Una plataforma de chat estilo Discord para conectar con tus compañeros de la UNA.</p>
+    <p>Para continuar, por favor inicia sesión.</p>
+    <a href="/login" class="login-btn">Iniciar sesión</a>
+    <div class="footer">UNAChat - Proyecto OAuth</div>
+  </div>
+</body>
+</html>
