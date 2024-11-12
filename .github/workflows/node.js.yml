@@ -75,10 +75,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: docker
     steps:
+      - uses: actions/checkout@v4
       - name: Install Railway CLI
         run: curl -fsSL https://railway.app/install.sh | sh
 
-      - name: Deploy to Railway
-        run: railway up 
+      - name: Deploy to Railway using railway.json
+        run: railway up
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
