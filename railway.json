@@ -1,6 +1,12 @@
 {
-    "build": {
-      "builder": "DOCKER"
+    "services": {
+      "chat-app": {
+        "name": "chat-app",
+        "buildType": "docker",
+        "docker": {
+          "image": "acunadavid05/chat-app:latest"
+        }
+      }
     }
   }
   
