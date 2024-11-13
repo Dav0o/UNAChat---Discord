@@ -1,13 +1,34 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "*",
-    "express-openid-connect": "^2.17.1",
-    "mocha": "^10.2.0",
-    "socket.io": "*"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "mocha"
-  }
+	"name": "unachat",
+	"version": "1.0.0",
+	"description": "UNAChat is a chat application based on Node.js and Socket.IO that simulates a Discord-style chat experience with multiple channels, active users, and a modern, easy-to-use interface. It also uses Auth0 to manage authentication, allowing users to log in and log out securely.",
+	"author": "Acuña Mora David, Díaz Marín Javier, Ruíz Vásquez Dyllan",
+	"license": "MIT",
+	"type": "commonjs",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "mocha",
+		"lint": "eslint . --fix",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.18.2",
+		"express-openid-connect": "^2.17.1",
+		"socket.io": "^4.7.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.14.0",
+		"eslint": "^9.14.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-security": "^3.0.1",
+		"globals": "^15.12.0",
+		"mocha": "^10.2.0",
+		"prettier": "^3.3.3"
+	}
 }
