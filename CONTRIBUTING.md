@@ -1,26 +1,27 @@
-# Contribuyendo a UNAChat
+# Contributing to UNAChat
 
-¡Gracias por tu interés en contribuir a UNAChat! Aquí hay algunas pautas para ayudarte a comenzar.
+Thank you for your interest in contributing to UNAChat! Here are some guidelines to help you get started.
 
-## Cómo empezar
+## How to Start
 
-1. **Forkea el repositorio**: Haz clic en el botón "Fork" en la parte superior derecha del repositorio.
-2. **Clona tu fork**: Clona tu fork a tu máquina local usando `git clone`.
-3. **Crea una rama**: Crea una nueva rama para tu contribución usando `git checkout -b nombre-de-tu-rama`.
-4. **Haz tus cambios**: Realiza los cambios necesarios en tu rama.
-5. **Haz commit de tus cambios**: Usa `git commit -m "Descripción de tus cambios"` para hacer commit de tus cambios.
-6. **Sube tus cambios**: Sube tus cambios a tu fork usando `git push origin nombre-de-tu-rama`.
-7. **Crea un Pull Request**: Ve a la página de tu fork en GitHub y crea un nuevo Pull Request.
+1. **Fork the repository**: Click the "Fork" button at the top right of the repository.
+2. **Clone your fork**: Clone your fork to your local machine using `git clone`.
+3. **Create a branch**: Create a new branch for your contribution using `git checkout -b your-branch-name`.
+4. **Make your changes**: Make the necessary changes in your branch.
+5. **Commit your changes**: Use `git commit -m "Description of your changes"` to commit your changes.
+6. **Push your changes**: Push your changes to your fork using `git push origin your-branch-name`.
+7. **Create a Pull Request**: Go to your fork's page on GitHub and create a new Pull Request.
 
-## Pautas para contribuciones
-- Asegúrate de que tu código sigue las [guías de estilo](./CONVENTIONS.md) y [estructura del proyecto](./STRUCTURE.md).
-- Incluye pruebas para cualquier cambio que realices.
-- Documenta tus cambios en el archivo `CHANGELOG.md`.
+## Contribution Guidelines
 
-## Código de conducta
+- Ensure your code follows the [style guides](./CONVENTIONS.md) and [project structure](./STRUCTURE.md).
+- Include tests for any changes you make.
+- Document your changes in the `CHANGELOG.md` file.
 
-Por favor, lee nuestro [Código de Conducta](./CODE_OF_CONDUCT.md) para entender las expectativas que tenemos para todos los colaboradores.
+## Code of Conduct
 
-¡Gracias por contribuir!
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to understand the expectations we have for all contributors.
 
-- El equipo de UNAChat
+Thank you for contributing!
+
+- The UNAChat Team

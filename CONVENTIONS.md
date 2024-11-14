@@ -1,151 +1,151 @@
-# Convenciones de Nombres
+# Naming Conventions
 
-Este documento define las convenciones de nombres que todos los miembros del equipo deben seguir. El objetivo es asegurar un código limpio, coherente y fácil de mantener.
+This document defines the naming conventions that all team members must follow. The goal is to ensure clean, consistent, and maintainable code.
 
 ## 1. Variables
 
-- **Formato**: Las **variables** deben utilizar **camelCase** (minúsculas con la primera letra de cada palabra en mayúscula, excepto la primera palabra).
-- **Propósito**: Usar `camelCase` permite mantener la legibilidad y consistencia en el código.
-- **Ejemplo**:
+- **Format**: **Variables** should use **camelCase** (lowercase with the first letter of each word capitalized, except the first word).
+- **Purpose**: Using `camelCase` maintains readability and consistency in the code.
+- **Example**:
     ```javascript
-    let userName = 'John'; // Correcto
-    let userAge = 25; // Correcto
-    let user_age = 30; // Incorrecto
+    let userName = 'John'; // Correct
+    let userAge = 25; // Correct
+    let user_age = 30; // Incorrect
     ```
 
-## 2. Constantes
+## 2. Constants
 
-- **Formato**: Las **constantes** deben utilizar **UPPER_SNAKE_CASE** (todas las letras en mayúsculas y las palabras separadas por guiones bajos).
-- **Propósito**: Usar `UPPER_SNAKE_CASE` permite identificar fácilmente las constantes en el código.
-- **Ejemplo**:
+- **Format**: **Constants** should use **UPPER_SNAKE_CASE** (all uppercase letters with words separated by underscores).
+- **Purpose**: Using `UPPER_SNAKE_CASE` makes it easy to identify constants in the code.
+- **Example**:
     ```javascript
-    const MAX_USERS = 100; // Correcto
-    const API_URL = 'https://api.example.com'; // Correcto
-    const maxUsers = 100; // Incorrecto
+    const MAX_USERS = 100; // Correct
+    const API_URL = 'https://api.example.com'; // Correct
+    const maxUsers = 100; // Incorrect
     ```
 
-## 3. Funciones
+## 3. Functions
 
-- **Formato**: Las **funciones** deben utilizar **camelCase**.
-- **Propósito**: Usar `camelCase` para funciones mantiene la consistencia con las variables.
-- **Ejemplo**:
+- **Format**: **Functions** should use **camelCase**.
+- **Purpose**: Using `camelCase` for functions maintains consistency with variables.
+- **Example**:
     ```javascript
-    function fetchUserData() { ... } // Correcto
-    function handleSubmit() { ... } // Correcto
-    function fetch_user_data() { ... } // Incorrecto
+    function fetchUserData() { ... } // Correct
+    function handleSubmit() { ... } // Correct
+    function fetch_user_data() { ... } // Incorrect
     ```
 
-## 4. IDs y Clases en HTML
+## 4. IDs and Classes in HTML
 
-- **Formato**: Los **IDs** y **clases** deben utilizar **kebab-case** (minúsculas con palabras separadas por guiones).
-- **Propósito**: Usar `kebab-case` asegura la consistencia y legibilidad en los nombres de IDs y clases.
-- **Ejemplo**:
+- **Format**: **IDs** and **classes** should use **kebab-case** (lowercase with words separated by hyphens).
+- **Purpose**: Using `kebab-case` ensures consistency and readability in ID and class names.
+- **Example**:
     ```html
-    <div id="user-profile"></div> <!-- Correcto -->
-    <div id="user-card"></div> <!-- Correcto -->
-    <div id="UserProfile"></div> <!-- Incorrecto -->
+    <div id="user-profile"></div> <!-- Correct -->
+    <div id="user-card"></div> <!-- Correct -->
+    <div id="UserProfile"></div> <!-- Incorrect -->
     ```
 
-## 5. Comentarios
+## 5. Comments
 
-- **Formato**: Los **comentarios** deben ser claros y concisos, utilizando el idioma español. Para comentarios de una sola línea, usar `//` en JavaScript y `<!-- -->` en HTML. Para comentarios de múltiples líneas, usar `/* */` en JavaScript.
-- **Propósito**: Los comentarios ayudan a otros desarrolladores a entender el propósito y funcionamiento del código.
-- **Ejemplo**:
+- **Format**: **Comments** should be clear and concise, using Spanish. For single-line comments, use `//` in JavaScript and `<!-- -->` in HTML. For multi-line comments, use `/* */` in JavaScript.
+- **Purpose**: Comments help other developers understand the purpose and functionality of the code.
+- **Example**:
     ```javascript
-    // Esto es un comentario de una sola línea en JavaScript
-    let userName = 'John'; // Asigna el nombre de usuario
+    // This is a single-line comment in JavaScript
+    let userName = 'John'; // Assigns the user name
 
     /*
-     * Esto es un comentario de múltiples líneas en JavaScript
-     * Puede ser usado para explicar secciones más complejas del código
+     * This is a multi-line comment in JavaScript
+     * It can be used to explain more complex sections of code
      */
     function fetchUserData() {
-        // Lógica para obtener datos del usuario
+        // Logic to fetch user data
     }
     ```
 
     ```html
-    <!-- Esto es un comentario en HTML -->
+    <!-- This is a comment in HTML -->
     <div id="user-profile"></div>
     ```
 
-## 6. Nombres de Archivos
+## 6. File Names
 
-- **Formato**: Los **nombres de archivos** deben utilizar **kebab-case**.
-- **Propósito**: Usar `kebab-case` asegura la consistencia y facilita la lectura de los nombres de archivos.
-- **Ejemplo**:
+- **Format**: **File names** should use **kebab-case**.
+- **Purpose**: Using `kebab-case` ensures consistency and readability of file names.
+- **Example**:
     ```
-    index.html // Correcto
-    main.js // Correcto
-    user-profile.css // Correcto
-    userProfile.js // Incorrecto
+    index.html // Correct
+    main.js // Correct
+    user-profile.css // Correct
+    userProfile.js // Incorrect
     ```
 
-## 7. Eventos y Atributos en HTML
+## 7. Events and Attributes in HTML
 
-- **Formato**: Los **eventos** y **atributos** deben utilizar **camelCase**.
-- **Propósito**: Usar `camelCase` para eventos y atributos mantiene la consistencia con JavaScript.
-- **Ejemplo**:
+- **Format**: **Events** and **attributes** should use **camelCase**.
+- **Purpose**: Using `camelCase` for events and attributes maintains consistency with JavaScript.
+- **Example**:
     ```javascript
-    function handleClick() { ... } // Correcto
-    function fetchData() { ... } // Correcto
-    function handle_click() { ... } // Incorrecto
+    function handleClick() { ... } // Correct
+    function fetchData() { ... } // Correct
+    function handle_click() { ... } // Incorrect
     ```
 
     ```html
-    <button type="button">Click me</button> <!-- Correcto -->
-    <input type="text" id="user-name"> <!-- Correcto -->
-    <BUTTON TYPE="BUTTON">Click me</BUTTON> <!-- Incorrecto -->
+    <button type="button">Click me</button> <!-- Correct -->
+    <input type="text" id="user-name"> <!-- Correct -->
+    <BUTTON TYPE="BUTTON">Click me</BUTTON> <!-- Incorrect -->
     ```
 
-# Convenciones de Código
+# Code Conventions
 
-Este archivo contiene convenciones adaptadas para un proyecto básico que utiliza solo HTML, JavaScript y CSS, de acuerdo con las mejores prácticas. Puedes incluirlo en tu proyecto y compartirlo con el equipo para asegurar la coherencia en el código.
+This file contains conventions adapted for a basic project that uses only HTML, JavaScript, and CSS, according to best practices. You can include it in your project and share it with the team to ensure code consistency.
 
-## 1. Espacios vs Tabulaciones
+## 1. Spaces vs Tabs
 
-- **Formato**: Utilizar **4 espacios** en lugar de tabulaciones para la indentación.
-- **Propósito**: Usar espacios asegura que la indentación sea consistente en todos los editores y entornos.
-- **Ejemplo**:
+- **Format**: Use **4 spaces** instead of tabs for indentation.
+- **Purpose**: Using spaces ensures consistent indentation across all editors and environments.
+- **Example**:
     ```javascript
     function fetchUserData() {
-        let userName = 'John'; // Correcto
-        let userAge = 25; // Correcto
+        let userName = 'John'; // Correct
+        let userAge = 25; // Correct
     }
     ```
 
-## 2. Líneas en Blanco
+## 2. Blank Lines
 
-- **Formato**: Insertar **líneas en blanco** para separar bloques de código lógicos.
-- **Propósito**: Las líneas en blanco mejoran la legibilidad del código.
-- **Ejemplo**:
+- **Format**: Insert **blank lines** to separate logical blocks of code.
+- **Purpose**: Blank lines improve code readability.
+- **Example**:
     ```javascript
     function fetchUserData() {
         let userName = 'John';
 
-        // Lógica para obtener datos del usuario
+        // Logic to fetch user data
         let userAge = 25;
     }
     ```
 
-## 3. Manejo de Errores
+## 3. Error Handling
 
-- **Formato**: Utilizar **try-catch** para manejar errores en JavaScript.
-- **Propósito**: El manejo adecuado de errores previene que el programa falle inesperadamente.
-- **Ejemplo**:
+- **Format**: Use **try-catch** to handle errors in JavaScript.
+- **Purpose**: Proper error handling prevents the program from failing unexpectedly.
+- **Example**:
     ```javascript
     try {
         fetchUserData();
     } catch (error) {
-        console.error('Error al obtener datos del usuario:', error);
+        console.error('Error fetching user data:', error);
     }
     ```
 
-## 4. Uso de Dependencias
+## 4. Use of Dependencies
 
-- **Formato**: Mantener las **dependencias** actualizadas y documentadas en el archivo `package.json`.
-- **Propósito**: Usar dependencias actualizadas asegura la seguridad y funcionalidad del proyecto.
-- **Ejemplo**:
+- **Format**: Keep **dependencies** updated and documented in the `package.json` file.
+- **Purpose**: Using updated dependencies ensures the security and functionality of the project.
+- **Example**:
     ```json
     {
         "dependencies": {

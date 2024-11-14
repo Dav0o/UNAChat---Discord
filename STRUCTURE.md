@@ -1,23 +1,23 @@
-# Estructura del Proyecto
+# Project Structure
 
-Este documento describe la estructura del proyecto.
+This document describes the project structure.
 
-## Directorios
+## Directories
 
-- **/src**: Contiene el código fuente del proyecto.
-- **/docs**: Archivos de documentación.
-- **/tests**: Pruebas unitarias e integradas.
-- **/build**: Archivos compilados y artefactos de construcción.
+- **/src**: Contains the project's source code.
+- **/docs**: Documentation files.
+- **/tests**: Unit and integration tests.
+- **/build**: Compiled files and build artifacts.
 
-## Archivos
+## Files
 
-- **README.md**: Descripción general del proyecto.
-- **LICENSE**: Información sobre la licencia.
-- **.gitignore**: Especifica los archivos que deben ser ignorados por Git.
-- **package.json**: Metadatos y dependencias del proyecto.
+- **README.md**: General project description.
+- **LICENSE**: License information.
+- **.gitignore**: Specifies files to be ignored by Git.
+- **package.json**: Project metadata and dependencies.
 
-## Notas
+## Notes
 
-- Asegúrese de que todos los cambios en el código estén acompañados de pruebas apropiadas.
-- Siga los estándares de codificación descritos en el archivo `CONVENTIONS.md`.
-- Actualice regularmente la documentación para reflejar cualquier cambio en la estructura del proyecto.
+- Ensure all code changes are accompanied by appropriate tests.
+- Follow the coding standards described in the `CONVENTIONS.md` file.
+- Regularly update the documentation to reflect any changes in the project structure.

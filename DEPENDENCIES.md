@@ -1,31 +1,30 @@
-# Dependencias
+# Dependencies
 
-Este documento enumera las dependencias requeridas para el proyecto UNAChat Discord.
+This document lists the dependencies required for the UNAChat Discord project.
 
-## Versión
+## Version
 
-- Versión: 1.0.0
+- Version: 1.0.0
 
-## Dependencias
+## Dependencies
 
 ### Frameworks
 
-- **Express**: v4.17.1 - Licencia MIT
+- **Express**: v4.17.1 - MIT License
 
-### Datos sobre las versiones
+### Version Information
 
-- **Discord.js**: v13.1.0 - Licencia Apache-2.0
+- **Discord.js**: v13.1.0 - Apache-2.0 License
 
-### Licencias asociadas
+### Associated Licenses
 
 - **Node.js**: v14.17.0
 - **Express**: v4.17.1
 - **Discord.js**: v13.1.0
 
+## Installation
 
-## Instalación
-
-Para instalar las dependencias, ejecute el siguiente comando:
+To install the dependencies, run the following command:
 
 ```bash
 npm install
