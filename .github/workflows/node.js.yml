@@ -106,14 +106,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Trivy
-        run: |
-          sudo apt-get install wget -y
-          wget https://github.com/aquasecurity/trivy/releases/download/v0.31.3/trivy_0.31.3_Linux-64bit.deb
-          sudo dpkg -i trivy_0.31.3_Linux-64bit.deb
-
-      - name: Run Trivy scan on Docker image
-        run: trivy image --exit-code 1 --severity CRITICAL,HIGH acunadavid05/chat-app:latest
+      - name: Run Snyk vulnerability scan on Docker image
+        uses: snyk/actions/docker@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          image: acunadavid05/chat-app:latest
+          severity-threshold: high
 
   push:
     runs-on: ubuntu-latest
