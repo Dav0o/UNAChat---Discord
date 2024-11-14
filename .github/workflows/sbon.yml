@@ -1,0 +1,31 @@
+name: SBOM Generation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sbom-generation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Syft
+        run: |
+          curl -sSfL https://github.com/anchore/syft/releases/download/v0.77.0/syft-linux-amd64-v0.77.0.tar.gz | tar xz -C /usr/local/bin
+
+      - name: Generate SBOM
+        run: |
+          syft . -o json > sbom.json
+
+      - name: Commit and push SBOM
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: add SBOM file'
+          branch: main
+          files: 'sbom.json'

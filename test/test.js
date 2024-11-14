@@ -1,5 +1,4 @@
 /* eslint-env node, mocha */
-/* eslint-disable no-undef */
 const unalib = require('../unalib/index');
 var assert = require('assert');
 
