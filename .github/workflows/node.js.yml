@@ -27,6 +27,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Syft
+        run: |
+          curl -sSfL https://github.com/anchore/syft/releases/download/v0.77.0/syft-linux-amd64-v0.77.0.tar.gz | tar xz -C /usr/local/bin
+
+      - name: Generate SBOM
+        run: |
+          syft . -o json > sbom.json
+
+      # Hacer commit y push del archivo SBOM generado
+      - name: Commit SBOM file
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: add SBOM file'
+          branch: ${{ github.head_ref }}
+          files: 'sbom.json'
+
       - name: Run ESLint
         run: npm run lint
 
