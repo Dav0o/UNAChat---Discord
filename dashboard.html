@@ -8,6 +8,7 @@
 				padding: 0;
 				box-sizing: border-box;
 			}
+
 			body {
 				font-family: Arial, sans-serif;
 				background-color: #36393f;
@@ -16,6 +17,7 @@
 				height: 100vh;
 				overflow: hidden;
 			}
+
 			#channels {
 				width: 200px;
 				background-color: #2f3136;
@@ -25,6 +27,7 @@
 				align-items: center;
 				overflow-y: auto;
 			}
+
 			#channels h3 {
 				color: #72767d;
 				font-size: 14px;
@@ -33,11 +36,13 @@
 				text-align: center;
 				text-transform: uppercase;
 			}
+
 			#channels ul {
 				list-style: none;
 				width: 100%;
 				padding: 0;
 			}
+
 			#channels li {
 				padding: 10px;
 				font-size: 14px;
@@ -47,20 +52,24 @@
 				border-radius: 5px;
 				transition: background 0.3s;
 			}
+
 			#channels li:hover {
 				background-color: #42464d;
 			}
+
 			#channels li.active {
 				background-color: #5865f2;
 				color: #ffffff;
 				font-weight: bold;
 			}
+
 			#chat {
 				flex: 1;
 				display: flex;
 				flex-direction: column;
 				background-color: #36393f;
 			}
+
 			#messages {
 				list-style-type: none;
 				padding: 20px;
@@ -70,6 +79,7 @@
 				border-left: 1px solid #202225;
 				border-right: 1px solid #202225;
 			}
+
 			#messages li {
 				padding: 8px 12px;
 				margin-bottom: 8px;
@@ -78,9 +88,11 @@
 				background-color: #4f545c;
 				color: #dcddde;
 			}
+
 			#messages li b {
 				color: #7289da;
 			}
+
 			#users {
 				width: 200px;
 				background-color: #2f3136;
@@ -88,6 +100,7 @@
 				overflow-y: auto;
 				border-left: 1px solid #202225;
 			}
+
 			#users h3 {
 				color: #72767d;
 				font-size: 14px;
@@ -95,10 +108,12 @@
 				margin-bottom: 10px;
 				text-align: center;
 			}
+
 			#users ul {
 				list-style: none;
 				padding: 0;
 			}
+
 			#users li {
 				padding: 8px;
 				font-size: 14px;
@@ -106,9 +121,11 @@
 				border-radius: 5px;
 				margin-bottom: 5px;
 			}
+
 			#users li.online {
 				color: #43b581;
 			}
+
 			form {
 				display: flex;
 				align-items: center;
@@ -116,6 +133,7 @@
 				padding: 10px;
 				border-top: 1px solid #202225;
 			}
+
 			form input[type='text'] {
 				flex: 1;
 				border: none;
@@ -125,9 +143,11 @@
 				background-color: #202225;
 				color: #dcddde;
 			}
+
 			form input[type='text']:focus {
 				outline: none;
 			}
+
 			form button {
 				padding: 10px 15px;
 				background-color: #5865f2;
@@ -137,9 +157,11 @@
 				cursor: pointer;
 				transition: background 0.3s;
 			}
+
 			form button:hover {
 				background-color: #4e5bbf;
 			}
+
 			#logout-btn {
 				padding: 10px 15px;
 				background-color: #5865f2;
@@ -149,11 +171,13 @@
 				cursor: pointer;
 				transition: background 0.3s;
 			}
+
 			#logout-btn:hover {
 				background-color: #4e5bbf;
 			}
 		</style>
 	</head>
+
 	<body>
 		<!-- Barra lateral de canales -->
 		<div id="channels">
@@ -187,8 +211,18 @@
 			<ul id="userList"></ul>
 		</div>
 
-		<script src="https://cdn.socket.io/4.7.2/socket.io.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+		<script
+			src="https://cdn.socket.io/4.7.2/socket.io.js"
+			integrity="sha384-ijk2QwnixVP19l5ENflXHY2/BMo9ANUiTqH6MiVk6i7wp68I6wjNQFOcyayHgClg"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://code.jquery.com/jquery-1.11.1.js"
+			integrity="sha384-wciR07FV6RBcI+YEVsZy/bInxpyn0uefUp6Yi9R5r46Qv/yk/osR5nzY31koh9Uq"
+			crossorigin="anonymous"
+		></script>
+
 		<script>
 			var socket = io();
 			var currentChannel = 'general';

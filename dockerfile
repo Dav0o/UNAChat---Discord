@@ -16,5 +16,11 @@ COPY . .
 # Expone el puerto en el que se ejecutará tu aplicación (cámbialo si usas otro puerto)
 EXPOSE 3000
 
+# Crea un usuario no privilegiado 
+RUN adduser -D unauser
+
+# Cambia el usuario a uno no privilegiado
+USER unauser
+
 # Comando para ejecutar la aplicación
 CMD ["node", "server.js"]
