@@ -164,6 +164,6 @@ jobs:
       run: curl -fsSL https://railway.app/install.sh | sh
 
     - name: Deploy to Railway using railway.json
-      run: railway up --service chat-app 
+      run: railway up --service UNAchat-Discord 
       env:
         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
