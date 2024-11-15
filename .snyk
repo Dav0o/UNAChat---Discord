@@ -1,0 +1,11 @@
+# .snyk
+
+ignore:
+  SNYK-JS-BODYPARSER-7926860:
+    - "*"
+  SNYK-JS-WS-7266574:
+    - "*"
+  SNYK-JS-BRACES-6838727:
+    - "*"
+  SNYK-JS-CROSSSPAWN-8303230:
+    - "*"
