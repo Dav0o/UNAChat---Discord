@@ -167,3 +167,20 @@ jobs:
       run: railway up --service UNAchat-Discord 
       env:
         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
+  scan-staging:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Install Nuclei
+        run: |
+          curl -sSL https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei-linux-amd64.zip -o nuclei.zip
+          unzip nuclei.zip
+          chmod +x nuclei
+          sudo mv nuclei /usr/local/bin/
+
+      - name: Download Nuclei Templates
+        run: nuclei -update-templates
+
+      - name: Run Nuclei on Staging
+        run: nuclei -u https://unachat-staging-production.up.railway.app/ -t cves/ -severity critical,high
